@@ -11,7 +11,7 @@
 
   <style>
       body {
-      background: #18191a; color: white; font-family: 'Segoe UI', sans-serif; padding-top: 60px; }
+      background: #18191a; color: white; font-family: 'Segoe UI', sans-serif; padding-top: 60px;width: 100%;}
     .navbar-brand { color: white !important; font-weight: 600;font-size: 1.4rem;}
     .navbar-brand:hover {color: #f44336 !important; transform: scale(1.05); transition: all 0.s ease;
 }
@@ -86,42 +86,32 @@
       color: #dc3545; /* Bootstrap danger color for quantity */
     }
     .advantages{background-color: rgb(58, 54, 54); height: 250px;}
-    @media (min-width: 768px) and (max-width: 1024px) {
-      .summary-box {
-        position: sticky;
-        top: 20px;
-      }
-    }
-    @media (min-width: 425px) and(max-width: 769px) {
-      .cart-img {
-        margin-bottom: 10px;
-        width: 100%;
-        height: auto;
-      }
-      .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .iconsfooter {
-        justify-content: center;
-        margin-top: 15px;
-      }
-    }
-     @media (max-width: 424px) {
-      .cart-item {
-        padding: 10px;
-      }
-      .summary-box {
-        padding: 15px;
-      }
-    }
     .footer-icons1{height: 30px; height: 30px; font-size: 30px;}
 .footer-icons1:hover{color: #f44336; border-radius: 50px; cursor: pointer; animation-name: bi-facebook; animation-duration: 1.3s;} 
 @keyframes bi-facebook{
   0%{}
   100%{transform: rotate(360deg);}
 }
+  .footer-icons2{height: 30px; height: 30px; font-size: 30px;}
+.footer-icons2:hover{color: #f44336; border-radius: 50px; cursor: pointer; animation-name: bi-facebook; animation-duration: 1.3s;} 
+@keyframes bi-facebook{
+  0%{}
+  100%{transform: rotate(360deg);}
+}
+  .footer-icons3{height: 30px; height: 30px; font-size: 30px;}
+.footer-icons3:hover{color: #f44336; border-radius: 50px; cursor: pointer; animation-name: bi-facebook; animation-duration: 1.3s;} 
+@keyframes bi-facebook{
+  0%{}
+  100%{transform: rotate(360deg);}
+}
+  .footer-icons4{height: 30px; height: 30px; font-size: 30px;}
+.footer-icons4:hover{color: #f44336; border-radius: 50px; cursor: pointer; animation-name: bi-facebook; animation-duration: 1.3s;} 
+@keyframes bi-facebook{
+  0%{}
+  100%{transform: rotate(360deg);}
+
+}
+.scroll-button{position: absolute; margin-bottom: 80px; right: 20px;}
   </style>
 </head>
 <body>
@@ -340,14 +330,14 @@
 <footer class="footer bg-black ms-5">
 <div class="row"> 
 <div class="col-md-4 mb-4">
-  <h5>Tech shop</h5>
+  <h5 class="text-primary">Tech shop</h5>
   <p class=" text-white text-opacity-75">Subscribe to our email alert to recive early discount offers,<br>and product info</p>
   <nav class="">
   <input type="email Address" name="email" placeholder="email Address*" style="color: white; background-color: black; text-align: center;"><br> <br>
   <button class="btn btn-subscribe bg-danger text-white">Subscribe</button>
     </div>
     <div class="col-md-2 mb-4 justify-content-center">
-      <h5>Help</h5>
+      <h5 class="text-success">Help</h5>
       <ul class="list-unstyled text-white text-opacity-75">
         <li>FAQs</li>
         <li>Track Order</li>
@@ -358,7 +348,7 @@
     </div>
 
     <div class="col-md-3 mb-4 justify-content-center"> 
-    <h5>Policies</h5>
+    <h5 class="text-info">Policies</h5>
     <ul class="list-unstyled text-white text-opacity-75">
       <li>Return Policy</li>
       <li>Security</li>
@@ -368,7 +358,7 @@
     </ul>
     </div>
     <div class="col-md-3 mb-4 justify-content-center">
-    <h5>Company</h5>
+    <h5 class="text-warning">Company</h5>
     <ul class="list-unstyled text-white text-opacity-75">
       <li>About Us</li>
       <li>Contact Us</li>
@@ -389,15 +379,17 @@
       </div>
 
       <!-- Right side -->
-      <div class="col-md-6 text-end mb-5 mt-3">
+      <div class="col-md-6 text-end mb-5 mt-3 ml-3">
         <div class="d-inline-flex align-items-center gap-3">
-          <i class="footer-icons1 bi-facebook text-white"></i>
-          <i class="footer-icons2 bi bi-instagram text-white"></i>
-          <i class="footer-icons3 bi bi-twitter text-white"></i>
-          <i class="footer-icons4 bi bi-linkedin text-white"></i>
+          <i class="footer-icons1 bi-facebook text-danger"></i>
+          <i class="footer-icons2 bi bi-instagram text-primary"></i>
+          <i class="footer-icons3 bi bi-twitter text-warning"></i>
+          <i class="footer-icons4 bi bi-linkedin text-info"></i>
+          <div class="scroll-button">
           <a href="#top">
             <button class="btn btn-danger btn-sm"><i class="bi bi-chevron-up"></i></button>
           </a>
+          </div>
         </div>
       </div>
   </footer>
